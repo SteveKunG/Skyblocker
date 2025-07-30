@@ -376,6 +376,21 @@ public class HelperCategory {
 								.build())
 						.option(ConfigUtils.createShortcutToKeybindsScreen())
 						.build())
+
+				//Barn
+				.group(OptionGroup.createBuilder()
+						.name(Text.translatable("skyblocker.config.helpers.barn"))
+						.collapsed(true)
+						.option(Option.<Boolean>createBuilder()
+								.name(Text.translatable("skyblocker.config.helpers.barn.enableHungryHikerReminder"))
+								.description(Text.translatable("skyblocker.config.helpers.barn.enableHungryHikerReminder.@Tooltip"))
+								.binding(defaults.helpers.barn.enableHungryHikerReminder,
+										() -> config.helpers.barn.enableHungryHikerReminder,
+										newValue -> config.helpers.barn.enableHungryHikerReminder = newValue)
+								.controller(ConfigUtils.createBooleanController())
+								.build())
+						.option(ConfigUtils.createShortcutToKeybindsScreen())
+						.build())
 				.build();
 	}
 }

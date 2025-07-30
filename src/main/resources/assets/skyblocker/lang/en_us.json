@@ -445,6 +445,11 @@
 
   "skyblocker.config.helpers": "Helpers",
 
+  "skyblocker.config.helpers.barn": "Barn",
+  "skyblocker.config.helpers.barn.sendHungryHikerReminderMessage": "Hungry Hiker is ready to fed!",
+  "skyblocker.config.helpers.barn.enableHungryHikerReminder": "Enable Hungry Hiker Reminder",
+  "skyblocker.config.helpers.barn.enableHungryHikerReminder.@Tooltip": "Sends a message in chat when it's time to fed Hungry Hiker",
+
   "skyblocker.config.helpers.bazaar": "Bazaar",
   "skyblocker.config.helpers.bazaar.enableBazaarHelper": "Enable Bazaar Helper",
   "skyblocker.config.helpers.bazaar.enableBazaarHelper.@Tooltip": "Draws icons on top of orders to explain the current state of the order.\n\n%s: Order is going to expire soon\n%s: Order has expired\n%s: Order is filled to some degree and there are items/coins to claim\n%s: Order is filled",

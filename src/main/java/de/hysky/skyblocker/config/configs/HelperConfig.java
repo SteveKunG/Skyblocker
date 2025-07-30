@@ -35,6 +35,8 @@ public class HelperConfig {
 
 	public Bazaar bazaar = new Bazaar();
 
+	public Barn barn = new Barn();
+
 	public ItemPrice itemPrice = new ItemPrice();
 
 	public static class MythologicalRitual {
@@ -135,6 +137,10 @@ public class HelperConfig {
 		public boolean enableBazaarHelper = true;
 
 		public boolean enableReorderHelper = true;
+	}
+
+	public static class Barn {
+		public boolean enableHungryHikerReminder = true;
 	}
 
 	public static class ItemPrice {
