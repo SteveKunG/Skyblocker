@@ -91,7 +91,7 @@ public class HungryHikerReminder {
 			return;
 		}
 
-		if (System.currentTimeMillis() - time >= REMINDER_TIME) sendMessage();
+		if (System.currentTimeMillis() - time >= 60 * 720 * 1000) sendMessage();
 		else {
 			Scheduler.INSTANCE.schedule(HungryHikerReminder::sendMessage, REMINDER_TIME - (int) ((System.currentTimeMillis() - time) / 50)); // 50 milliseconds is 1 tick
 			scheduled = true;
